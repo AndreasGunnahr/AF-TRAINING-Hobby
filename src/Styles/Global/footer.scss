@@ -1,0 +1,118 @@
+@import '../_global';
+
+.footer {
+    // position: absolute;
+    // bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    // grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "a b c d e ";
+    // display: flex;// // justify-content: center;
+    padding: 2rem 4rem;
+    background: $lightblack;
+    // flex-wrap: wrap;
+
+    .footer-logo {
+        grid-area: a;
+        font-size: 4rem;
+        padding: 2rem 2rem;
+        // display: flex;
+        // align-items: center;
+    }
+
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 2rem;
+
+        .footer-h1 {
+            font-size: 2.2rem;
+        }
+
+        .footer-link {
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 1rem 0;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+
+
+            .fontAwesome {
+                font-size: 1.6rem;
+                margin-right: 1rem;
+
+            }
+        }
+
+
+        &.client {
+            grid-area: b;
+        }
+
+        &.company {
+            grid-area: c;
+        }
+
+        &.other {
+            grid-area: d;
+        }
+
+
+        &.follow {
+            grid-area: e;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 873px) {
+    .footer {
+        grid-template-areas:
+            ". a a a ."
+            ". b . c ."
+            ". d . e .";
+
+        .footer-logo {
+            text-align: center;
+        }
+
+        .wrapper {
+
+
+            &.client,
+            &.other {
+                align-items: flex-start;
+
+
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .footer {
+        padding: 4rem 4rem;
+        grid-template-areas:
+            "a a a a ."
+            "b b b b ."
+            "c c c c ."
+            "d d d d ."
+            "e e e e .";
+
+
+        .footer-logo {
+            text-align: left;
+        }
+
+        .wrapper {}
+
+
+    }
+}

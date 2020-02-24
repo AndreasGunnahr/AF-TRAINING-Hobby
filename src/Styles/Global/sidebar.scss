@@ -1,0 +1,55 @@
+@import '../_global';
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; // ta bort eller ha kvar? 
+    background: lightgrey;
+    height: 100vh;
+    text-align: left;
+    padding: 2rem 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    z-index: 10;
+
+    @media (max-width: 576px) {
+        width: 100%;
+    }
+
+    .sidebar-menu {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        margin-top: 2rem;
+
+
+        .menu-link {
+            color: $black;
+            font-size: 2.5rem;
+            cursor: pointer;
+            padding: 1rem 0;
+
+
+        }
+    }
+
+    .sidebar-client-btn {
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        font-size: 2rem;
+        border: 2px solid $green;
+        width: 100%;
+        padding: 1rem 0;
+
+        text-align: center;
+        color: $black;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+}
