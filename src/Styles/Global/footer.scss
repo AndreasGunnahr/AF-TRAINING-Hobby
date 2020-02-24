@@ -7,13 +7,10 @@
     height: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    // grid-template-rows: repeat(5, 1fr);
     grid-template-areas:
-        "a b c d e ";
-    // display: flex;// // justify-content: center;
+        "a b c d e";
     padding: 2rem 4rem;
     background: $lightblack;
-    // flex-wrap: wrap;
 
     .footer-logo {
         grid-area: a;
@@ -39,7 +36,7 @@
             padding: 1rem 0;
             text-decoration: none;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
 
 
             .fontAwesome {
