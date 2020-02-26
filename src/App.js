@@ -6,18 +6,16 @@ import Home from "Components/Home/Home.jsx";
 import { render } from "node-sass";
 
 function App() {
-  render(){
-    return (
-      <div className="App">
-        <Router>
-          <div>
-            <h1>Teeeestotototot</h1>
-            <Route exact path="/" component={Home} />
-          </div>
-        </Router>
-      </div>
-    );
-  }
+  return (
+    <div className="App">
+      <Router>
+        <div>
+          <h1>Teeeestotototot</h1>
+          <Route exact path="/" component={Home} />
+        </div>
+      </Router>
+    </div>
+  );
 }
 
 export default App;
