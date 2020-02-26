@@ -13,7 +13,9 @@ const Hero = () => {
           <br /> träning
           <br /> för alla
         </h1>
-        <a className="hero-btn">Boka nu</a>
+        <a href="/" className="hero-btn">
+          Boka nu
+        </a>
       </div>
       <div className="hero-img"></div>
       <div className="next">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import "Styles/Global/sidebar.scss";
@@ -11,7 +11,9 @@ const Container = styled.div`
 const Sidebar = ({ open }) => {
   return (
     <Container open={open} className="sidebar">
-      <a className="sidebar-client-btn">Klient</a>
+      <a href="/" className="sidebar-client-btn">
+        Klient
+      </a>
       <ul className="sidebar-menu">
         <li className="menu-link">Hem</li>
         <li className="menu-link">Om oss</li>

@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 import "Styles/Home/newsLetter.scss";
 
@@ -16,7 +14,7 @@ const NewsLetter = () => {
         <div className="input-container">
           {/* Icon i placeholder */}
           <input placeholder="Ange din email"></input>
-          <a>Prenumerera</a>
+          <a href="/">Prenumerera</a>
         </div>
       </div>
     </form>

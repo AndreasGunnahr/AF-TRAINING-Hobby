@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import Hamburger from "Components/Global/Hamburger.jsx";
 import Sidebar from "Components/Global/Sidebar.jsx";
 import "Styles/Global/navbar.scss";
@@ -18,7 +17,9 @@ const Navbar = () => {
         <li className="link">Blogg</li>
         <li className="link">Kontakt</li>
       </ul>
-      <a className="client-btn">Klient</a>
+      <a href="/" className="client-btn">
+        Klient
+      </a>
     </nav>
   );
 };

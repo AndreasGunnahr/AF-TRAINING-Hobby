@@ -3,13 +3,15 @@
 .layout {
     position: relative;
     display: grid;
-    grid-template-columns: 150px 2fr 1fr 150px;
-    grid-template-rows: 80px calc(100vh - 80px) 100vh 300px minmax(200px, 1fr);
+    grid-template-columns: 100px 2fr 1fr 100px;
+    grid-template-rows: 80px calc(100vh - 80px) 100vh 100vh 300px 100vh minmax(200px, 1fr);
     grid-template-areas:
         "head       head        head        head"
         ".          hero        hero        hero"
         "history    history     history     ."
+        ".          services    services    services"
         "news       news        news        news"
+        "testomon   testomon    testomon    testomon"
         "footer     footer      footer      footer";
 
 
@@ -47,4 +49,12 @@ nav {
 .footer {
     // height: 100%;
     grid-area: footer;
+}
+
+.testomonials {
+    grid-area: testomon;
+}
+
+.services {
+    grid-area: services;
 }

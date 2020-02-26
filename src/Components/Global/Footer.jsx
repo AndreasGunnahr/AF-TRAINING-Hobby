@@ -13,7 +13,7 @@ function Footer() {
       <h1 className="footer-logo">LOGO</h1>
       <div className="wrapper client">
         <h1 className="footer-h1">Klient</h1>
-        <a href="#" className="footer-link">
+        <a href="/" className="footer-link">
           Logga in
         </a>
       </div>
