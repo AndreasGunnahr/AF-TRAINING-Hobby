@@ -6,7 +6,7 @@ import Hero from "Components/Home/Hero.jsx";
 import History from "Components/Home/History.jsx";
 import NewsLetter from "Components/Home/NewsLetter.jsx";
 import Services from "Components/Home/Services.jsx";
-// import Testomonials from "Components/Home/Testomonials.jsx";
+import Testimonials from "Components/Home/Testimonials.jsx";
 
 import "Styles/Home/home.scss";
 
@@ -18,6 +18,7 @@ const Home = () => {
       <History />
       <Services />
       <NewsLetter />
+      <Testimonials />
       <Footer />
     </div>
   );
