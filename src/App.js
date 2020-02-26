@@ -7,6 +7,7 @@ import Home from "Components/Home/Home.jsx";
 function App() {
   return (
     <div className="App">
+      <h1>Tessst</h1>
       <Router>
         <div>
           <Route exact path="/" component={Home} />
