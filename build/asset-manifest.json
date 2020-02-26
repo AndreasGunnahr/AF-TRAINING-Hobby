@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Af-app/static/css/main.727ca316.chunk.css",
-    "main.js": "/Af-app/static/js/main.2cd438d4.chunk.js",
-    "main.js.map": "/Af-app/static/js/main.2cd438d4.chunk.js.map",
+    "main.js": "/Af-app/static/js/main.6e46212b.chunk.js",
+    "main.js.map": "/Af-app/static/js/main.6e46212b.chunk.js.map",
     "runtime-main.js": "/Af-app/static/js/runtime-main.54a5d390.js",
     "runtime-main.js.map": "/Af-app/static/js/runtime-main.54a5d390.js.map",
     "static/js/2.86a6629c.chunk.js": "/Af-app/static/js/2.86a6629c.chunk.js",
     "static/js/2.86a6629c.chunk.js.map": "/Af-app/static/js/2.86a6629c.chunk.js.map",
     "index.html": "/Af-app/index.html",
-    "precache-manifest.870a6713cf0478c299c0dd1211982457.js": "/Af-app/precache-manifest.870a6713cf0478c299c0dd1211982457.js",
+    "precache-manifest.a2209c28a9826a9206caee54095cce42.js": "/Af-app/precache-manifest.a2209c28a9826a9206caee54095cce42.js",
     "service-worker.js": "/Af-app/service-worker.js",
     "static/css/main.727ca316.chunk.css.map": "/Af-app/static/css/main.727ca316.chunk.css.map",
     "static/js/2.86a6629c.chunk.js.LICENSE.txt": "/Af-app/static/js/2.86a6629c.chunk.js.LICENSE.txt",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.54a5d390.js",
     "static/js/2.86a6629c.chunk.js",
     "static/css/main.727ca316.chunk.css",
-    "static/js/main.2cd438d4.chunk.js"
+    "static/js/main.6e46212b.chunk.js"
   ]
 }
