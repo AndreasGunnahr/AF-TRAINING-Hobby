@@ -6,7 +6,9 @@ const NewsLetter = () => {
   return (
     <form className="news-letter">
       <div className="text-container">
-        <h1 className="news-title">Prenumerera på nyhetsbrev</h1>
+        <h1 className="news-title">
+          Prenumerera på <span className="underline">nyhetsbrev</span>
+        </h1>
         <span className="news-text">
           Prenumerera för att få de nyaste nyheterna <br></br> och
           uppdateringarna varje vecka.

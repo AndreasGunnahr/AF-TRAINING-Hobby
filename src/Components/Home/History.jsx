@@ -9,7 +9,7 @@ const History = () => {
       <h1 className="history-title">
         Din utveckling
         <br />
-        är alltid i fokus
+        är alltid i <span className="underline">fokus</span>
       </h1>
       <div className="history-container">
         <span className="history-text">
@@ -26,12 +26,7 @@ const History = () => {
           Rehabilitering att kontinuerligt utvärdera och reflektera kring de
           senaste inom hälso- och träningsbranschen för att kunna ge dig bästa
           möjliga hjälp, oavsett mål och syfte med träningen.
-          {/* <br></br> */}
         </span>
-        {/* <a className="read-more">
-          Läs mera
-          <FontAwesomeIcon className="fontAwesome" icon={faChevronRight} />
-        </a> */}
         <div className="history-info">
           <div className="container">
             <h1 className="number">1280</h1>

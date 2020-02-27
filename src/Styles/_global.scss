@@ -10,12 +10,6 @@ $white: #fafafa;
 $black: #000000;
 $green: #325A5C;
 $lightblack: #101010;
-// $dark-background-color: #1d2e39;
-// $background-color: #2f4858;
-// $menu-color: #3b4251;
-// $white: #fffefe;
-// $green: #4da167;
-// $grey: #7d7c7c;
 
 
 * {
@@ -32,6 +26,11 @@ body {
 html {
     font-size: 10px;
     overflow-x: hidden;
+}
+
+.underline {
+    font-family: $header-font;
+    border-bottom: 4px solid $green;
 }
 
 h1,

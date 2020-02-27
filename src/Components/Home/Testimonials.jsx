@@ -9,7 +9,7 @@ const Testimonials = () => {
       <h1 className="testimonials-title">
         Vad säger
         <br />
-        våra kunder
+        våra <span className="underline">kunder</span>
       </h1>
       <Slider />
     </section>

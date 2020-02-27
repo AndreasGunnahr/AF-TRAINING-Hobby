@@ -8,7 +8,7 @@ const Services = () => {
       <h1 className="services-title">
         Tjänster som
         <br />
-        vi kan erbjuda
+        vi kan <span className="underline">erbjuda</span>
       </h1>
       <div className="services-container">
         <div className="container">

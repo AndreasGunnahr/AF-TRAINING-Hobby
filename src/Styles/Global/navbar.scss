@@ -9,6 +9,7 @@ nav {
 
     .logo {
         font-size: 4rem;
+        cursor: pointer;
     }
 
     .nav-links {
@@ -36,6 +37,7 @@ nav {
         background: $green;
         padding: 1rem 5rem;
         text-transform: uppercase;
+        cursor: pointer;
     }
 
     @media screen and (max-width: 850px) {
