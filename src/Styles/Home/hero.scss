@@ -1,10 +1,14 @@
 @import '../_global';
 
 .hero {
-    position: relative;
+    height: calc(100vh - 80px);
+    max-width: 1700px;
+    // position: relative;
     display: grid;
     grid-template-columns: 300px 100px 1fr;
-    grid-template-rows: 50px 600px 100px; //100 800 200
+    grid-template-rows: 50px minmax(600px, 1fr) 100px; //100 800 200
+    padding-left: 75px;
+    margin: auto auto;
 
     .hero-img {
         grid-row: 2;
@@ -28,18 +32,20 @@
         z-index: 3;
 
         .hero-title {
-            font-size: 6rem; //7.5
+            font-size: 6.5rem;
             margin-bottom: 4rem;
             margin-top: 5rem;
+            // display: flex;
+            // justify-content: center;
         }
 
         .hero-btn {
             font-size: 3rem;
-            padding: 2rem 0; // 3 16
+            padding: 2rem 0;
             background: $green;
             letter-spacing: 1px;
             cursor: pointer;
-            width: calc(400px - 3rem);
+            width: 400px;
             text-align: center;
             text-decoration: none;
 
@@ -47,18 +53,17 @@
     }
 
     .next {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
+        grid-row: 3;
+        grid-column: 1/4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
         margin-bottom: 1rem;
         cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
 
         .next-title {
-            font-size: 1rem;
+            font-size: 1.2rem;
             font-family: $header-font;
             color: $white;
             text-transform: uppercase;
@@ -66,7 +71,140 @@
 
         .fontAwesome {
             color: $white;
-            font-size: 1rem;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1720px) {
+    .hero {
+        padding-right: 50px;
+        grid-template-columns: 300px 200px 1fr;
+
+        .hero-container {
+            .hero-title {
+                font-size: 7.5rem;
+            }
+
+            .hero-btn {
+                font-size: 3.5rem;
+                padding: 2rem 0;
+
+                width: 460px;
+                text-align: center;
+                text-decoration: none;
+
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1048px) {
+    .hero {
+        .hero-container {
+            .hero-title {
+                font-size: 5.5rem; //7.5
+            }
+
+            .hero-btn {
+                font-size: 2.5rem;
+                padding: 1.75rem 0; // 3 16
+                width: calc(400px - 5.5rem);
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 100vh !important;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 100px;
+        padding: 0;
+        margin-top: -80px;
+
+        .hero-img {
+            grid-row: 1/2;
+            grid-column: 1/4;
+            background-color: rgba(0, 0, 0, .8);
+        }
+
+        .hero-container {
+            grid-row: 1/2;
+            grid-column: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .hero-title {
+                font-size: 5.5rem; //7.5
+            }
+
+            .hero-btn {
+                font-size: 2.5rem;
+                padding: 1.75rem 0; // 3 16
+                width: calc(400px - 5.5rem);
+
+            }
+        }
+
+        // .next {
+        //     position: absolute;
+        //     bottom: 0;
+        //     right: 50%;
+        //     transform: translate(-50%, -50%);
+
+        //     .next-title {
+        //         font-size: 1rem;
+        //         font-family: $header-font;
+        //         color: $white;
+        //         text-transform: uppercase;
+        //     }
+
+        //     .fontAwesome {
+        //         color: $white;
+        //         font-size: 1rem;
+        //     }
+        // }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .hero {
+
+
+        .hero-container {
+
+            .hero-title {
+                margin-top: -80px;
+                font-size: 5rem; //7.5
+            }
+
+            .hero-btn {
+                font-size: 2.5rem;
+                padding: 1.75rem 0; // 3 16
+                width: 310px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .hero {
+        .hero-container {
+
+            .hero-title {
+                margin-top: -80px;
+                font-size: 4.5rem; //7.5
+            }
+
+            .hero-btn {
+                font-size: 2.5rem;
+                padding: 1.75rem 0; // 3 16
+                width: 278px;
+            }
         }
     }
 }

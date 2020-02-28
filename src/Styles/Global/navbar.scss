@@ -1,11 +1,15 @@
 @import '../_global';
 
 nav {
+    max-width: 1700px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 0 50px 0 75px;
+    margin: 0 auto;
+    height: 80px;
+    z-index: 20;
 
     .logo {
         font-size: 4rem;
@@ -40,7 +44,17 @@ nav {
         cursor: pointer;
     }
 
-    @media screen and (max-width: 850px) {
+
+    @media screen and (min-width: 1720px) {
+        & {}
+
+    }
+
+    @media screen and (max-width: 939px) {
+        .sidebar {
+            display: flex;
+        }
+
         & {
             .nav-links {
                 display: none;
@@ -50,5 +64,13 @@ nav {
                 display: none;
             }
         }
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 0 25px;
     }
 }
