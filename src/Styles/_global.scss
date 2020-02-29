@@ -46,7 +46,8 @@ a {
     font-family: $header-font;
 }
 
-span {
+span,
+p {
     font-family: $text-font;
     color: $white;
 }

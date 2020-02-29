@@ -12,7 +12,7 @@ const History = () => {
         är alltid i <span className="underline">fokus</span>
       </h1>
       <div className="history-container">
-        <span className="history-text">
+        <p className="history-text">
           AF Träning & Rehabilitering är ett heltäckande tränings- och
           rehabiliteringscenter med syfte att utveckla dig som idrottare,
           motionär och företag. Med kompetenser inom personlig träning,
@@ -20,13 +20,14 @@ const History = () => {
           hjälpt människor rehabilitera såväl enklare till mer komplexa skador,
           ökat deras välbefinnande samt prestera bättre inom sina idrotter!
           <br></br>
-          <br></br>
+        </p>
+        <p className="history-text">
           Vårt ständiga fokus ligger på att få dig som klient att känna dig sedd
           och utveckla de förmågor just du vill. Detta får oss på AF Träning &
           Rehabilitering att kontinuerligt utvärdera och reflektera kring de
           senaste inom hälso- och träningsbranschen för att kunna ge dig bästa
           möjliga hjälp, oavsett mål och syfte med träningen.
-        </span>
+        </p>
         <div className="history-info">
           <div className="container">
             <h1 className="number">1280</h1>
