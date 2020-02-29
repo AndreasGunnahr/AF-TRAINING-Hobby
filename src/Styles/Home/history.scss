@@ -33,7 +33,7 @@
     .history-container {
         grid-row: 3;
         grid-column: 3;
-        padding: 5rem 7rem 0 7rem;
+        padding: 5rem 5rem 0 5rem;
 
 
         .history-text {
@@ -87,7 +87,7 @@
 
         .history-container {
 
-            padding: 5rem 0rem 0 7rem;
+            padding: 7rem 7rem 0 7rem;
 
             .history-text {
                 font-size: 1.8rem;
@@ -98,7 +98,6 @@
 
 @media screen and (max-width: 1440px) {
     .history {
-        .history-title {}
 
         .history-container {
             .history-text {
@@ -180,6 +179,7 @@
         .history-title {
             font-size: 3.5rem;
             grid-column: 2;
+            margin: auto 0;
 
 
         }
@@ -187,11 +187,12 @@
         .history-container {
             grid-column: 2;
             grid-row: 3;
-            padding: 4rem 0 0 0;
+            padding: 2rem 0 0 0;
 
             .history-text {
+
                 &:nth-child(2) {
-                    margin-top: 4rem;
+                    margin-top: 3rem;
                 }
 
             }
@@ -199,6 +200,7 @@
             .history-info {
                 .container {
                     .number {
+                        margin-top: 1rem;
                         font-size: 2.25rem;
                     }
 
@@ -222,9 +224,7 @@
         }
 
         .history-container {
-            .history-text {
-                font-size: 1.2rem;
-            }
+            .history-text {}
         }
 
         .history-container {
@@ -247,29 +247,33 @@
 
 @media screen and (max-width: 425px) {
     .history {
+        grid-template-columns: 30px 1fr 30px;
         grid-template-rows: 50px 85px 1fr 50px;
-        grid-template-columns: 25px 1fr 25px;
 
         .history-title {
             font-size: 2.75rem;
+        }
+
+        .history-container {
+            .history-text {
+                font-size: 1.4rem;
+            }
         }
     }
 }
 
 @media screen and (max-width: 350px) {
     .history {
-
         .history-title {
             font-size: 2.5rem;
         }
+
 
         .history-container {
             .history-text {
                 font-size: 1.2rem;
             }
-        }
 
-        .history-container {
             .history-info {
                 .container {
                     .number {

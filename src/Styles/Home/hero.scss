@@ -6,7 +6,7 @@
     // position: relative;
     display: grid;
     grid-template-columns: 300px 100px 1fr;
-    grid-template-rows: 50px minmax(600px, 1fr) 100px; //100 800 200
+    grid-template-rows: 50px minmax(600px, 1fr) 50px; //100 800 200
     padding-left: 75px;
     margin: auto auto;
 

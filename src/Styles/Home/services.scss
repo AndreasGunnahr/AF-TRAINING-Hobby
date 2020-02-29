@@ -2,10 +2,12 @@
 
 
 .services {
-    height: 100vh;
+    min-height: 100vh;
+    max-width: 1700px;
     display: grid;
-    grid-template-columns: 1fr 100px 600px; // 900px 50px 1fr 300px
-    grid-template-rows: 55px 150px 1fr 75px; //100 800 200
+    grid-template-columns: 1fr 100px minmax(200px, 1fr);
+    grid-template-rows: 75px 150px 1fr 75px;
+    margin: 0 auto;
 
     .services-img {
         grid-row: 2/4;
@@ -31,26 +33,18 @@
         grid-row: 3;
         grid-column: 1;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 4rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 3rem;
         padding: 5rem 5rem 0 5rem;
 
         .container {
             display: flex;
             flex-direction: column;
-            // cursor: pointer;
-            // padding: 2rem;
-
-
-            // &:hover {
-            //     box-shadow:
-            //         // #000000 4px 4px 8px,
-            //         #4d4d4d -2px -2px 6px;
-            // }
 
             .service-title {
                 font-size: 2rem;
                 margin-bottom: 1rem;
+                letter-spacing: 1px;
             }
 
             .service-text {
@@ -61,4 +55,168 @@
         }
     }
 
+}
+
+@media screen and (min-width: 1850px) {
+    .services {
+        .services-container {
+            // padding: 7rem 7rem 0 0 !important;
+        }
+    }
+}
+
+@media screen and (min-width: 1720px) {
+    .services {
+        .services-title {
+            font-size: 5.5rem;
+        }
+
+        .services-container {
+            padding: 7rem 7rem 0 7rem;
+            grid-gap: 4rem;
+
+            .container {
+
+                .service-text {
+                    font-size: 1.8rem;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .services {
+        .services-container {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+            .container {
+
+                .service-title {
+                    font-size: 1.8rem;
+                }
+
+                .service-text {
+                    font-size: 1.4rem;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .services {
+        grid-template-columns: minmax(450px, 1fr) 100px minmax(200px, 1fr);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .services {
+
+        .services-title {
+            font-size: 4rem;
+        }
+
+        .services-container {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+            .container {
+                .service-title {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services {
+        grid-template-columns: 75px 1fr 75px;
+        grid-template-rows: 50px 125px 1fr 50px;
+
+        .services-img {
+            grid-column: 1/4;
+            background-color: rgba(0, 0, 0, .8);
+        }
+
+
+        .services-title {
+            font-size: 3.5rem;
+            grid-column: 2;
+            margin: auto 0;
+
+        }
+
+        .services-container {
+            grid-column: 2;
+            padding: 2rem 0 0 0;
+            grid-gap: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+            .container {
+                .service-text {
+                    font-size: 1.4rem;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 564px) {
+    .services {
+        grid-template-columns: 50px 1fr 50px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .services {
+        grid-template-columns: 30px 1fr 30px;
+        grid-template-rows: 50px 85px 1fr 50px;
+
+
+        .services-title {
+            font-size: 2.75rem;
+        }
+
+        .services-container {
+            grid-gap: 3rem;
+
+            .container {
+                .service-title {
+                    font-size: 1.6rem;
+
+                }
+
+                .service-text {
+                    font-size: 1.4rem;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .services {
+        .services-title {
+            font-size: 2.5rem;
+        }
+
+        .services-container {
+            .container {
+                .service-title {
+                    font-size: 1.5rem;
+
+                }
+
+                .service-text {
+                    font-size: 1.2rem;
+                }
+
+            }
+        }
+    }
 }

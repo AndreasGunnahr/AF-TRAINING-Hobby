@@ -16,10 +16,10 @@ const Home = () => {
       <Navbar />
       <Hero />
       <History />
-      {/* <Services />
-      <NewsLetter />
+      <Services />
+      {/* <NewsLetter />
       <Testimonials />
-      <Footer /> */}
+      <Footer />  */}
     </div>
   );
 };
