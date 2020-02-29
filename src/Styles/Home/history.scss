@@ -12,7 +12,6 @@
     .history-img {
         grid-row: 2/4;
         grid-column: 1/3;
-        // width: 100%;
         background: url("../../assets/images/gym.jpg") no-repeat;
         background-position: center;
         background-size: cover;
@@ -224,10 +223,6 @@
         }
 
         .history-container {
-            .history-text {}
-        }
-
-        .history-container {
             .history-info {
                 .container {
                     .number {
@@ -267,7 +262,6 @@
         .history-title {
             font-size: 2.5rem;
         }
-
 
         .history-container {
             .history-text {
