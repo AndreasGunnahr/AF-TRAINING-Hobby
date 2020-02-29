@@ -10,8 +10,8 @@ const NewsLetter = () => {
           Prenumerera på <span className="underline">nyhetsbrev</span>
         </h1>
         <span className="news-text">
-          Prenumerera för att få de nyaste nyheterna <br></br> och
-          uppdateringarna varje vecka.
+          Prenumerera för att få de nyaste nyheterna och uppdateringarna varje
+          vecka.
         </span>
         <div className="input-container">
           {/* Icon i placeholder */}
