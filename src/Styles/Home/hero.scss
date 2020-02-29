@@ -104,12 +104,12 @@
     .hero {
         .hero-container {
             .hero-title {
-                font-size: 5.5rem; //7.5
+                font-size: 5.5rem;
             }
 
             .hero-btn {
                 font-size: 2.5rem;
-                padding: 1.75rem 0; // 3 16
+                padding: 1.75rem 0;
                 width: calc(400px - 5.5rem);
 
             }
@@ -139,13 +139,13 @@
             align-items: center;
 
             .hero-title {
-                font-size: 5.5rem; //7.5
+                font-size: 5rem;
             }
 
             .hero-btn {
-                font-size: 2.5rem;
-                padding: 1.75rem 0; // 3 16
-                width: calc(400px - 5.5rem);
+                font-size: 2rem;
+                padding: 1.75rem 0;
+                width: 310px;
 
             }
         }
@@ -161,14 +161,13 @@
             justify-content: center;
 
             .hero-title {
-                // margin-top: -80px;
                 margin-top: 0;
-                font-size: 4rem; //7.5
+                font-size: 4rem;
             }
 
             .hero-btn {
                 font-size: 1.5rem;
-                padding: 1.5rem 0; // 3 16
+                padding: 1.5rem 0;
                 width: 250px;
             }
         }
@@ -180,12 +179,12 @@
         .hero-container {
 
             .hero-title {
-                font-size: 3.5rem; //7.5
+                font-size: 3.5rem;
             }
 
             .hero-btn {
                 font-size: 1.5rem;
-                padding: 1.25rem 0; // 3 16
+                padding: 1.25rem 0;
                 width: 215px;
             }
         }
