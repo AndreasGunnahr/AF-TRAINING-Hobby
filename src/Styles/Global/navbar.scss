@@ -24,6 +24,7 @@ nav {
             font-size: 1.8rem;
             margin-left: 2rem;
             cursor: pointer;
+            text-decoration: none;
 
             &:first-child {
                 margin: 0;
@@ -46,9 +47,9 @@ nav {
 
 
     @media screen and (min-width: 1720px) {
-       & {}
+        & {}
 
-   }
+    }
 
     @media screen and (max-width: 939px) {
         .sidebar {
