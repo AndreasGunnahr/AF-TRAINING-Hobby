@@ -21,7 +21,6 @@ const Slider = () => {
   const [active, setActive] = useState("center");
 
   const handleClick = e => {
-    console.log(e.target.classList[2]);
     if (active === e.target.classList[2]) {
     } else {
       const newActiveElements = document.querySelectorAll(

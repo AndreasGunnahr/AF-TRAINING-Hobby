@@ -50,6 +50,7 @@
         .history-info {
             margin-top: 3rem;
             display: flex;
+            grid-gap: 2rem;
 
             .container {
                 margin-right: 5rem;
@@ -60,7 +61,7 @@
 
                 .number {
                     margin-top: 2rem;
-                    font-size: 3rem;
+                    font-size: 2.75rem;
                 }
 
                 .text {
@@ -90,6 +91,19 @@
 
             .history-text {
                 font-size: 1.8rem;
+            }
+
+            .history-info {
+                .container {
+                    .number {
+                        margin-top: 3rem;
+                        font-size: 3rem;
+                    }
+
+                    .text {
+                        font-size: 1.3rem;
+                    }
+                }
             }
         }
     }
@@ -197,6 +211,7 @@
             }
 
             .history-info {
+
                 .container {
                     .number {
                         margin-top: 1rem;
