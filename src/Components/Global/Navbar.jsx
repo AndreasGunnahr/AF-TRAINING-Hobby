@@ -27,7 +27,6 @@ const Navbar = ({ active }) => {
     }
   ]);
   const [open, setOpen] = useState(false);
-  // const [active, setActive] = useState("active");
 
   return (
     <nav>

@@ -29,18 +29,18 @@
         z-index: 3;
 
         .hero-title {
-            font-size: 6.5rem;
+            font-size: 6rem;
             margin-bottom: 4rem;
             margin-top: 5rem;
         }
 
         .hero-btn {
-            font-size: 3rem;
+            font-size: 2.75rem;
             padding: 2rem 0;
             background: $green;
             letter-spacing: 1px;
             cursor: pointer;
-            width: 400px;
+            width: 370px;
             text-align: center;
             text-decoration: none;
 
@@ -78,14 +78,14 @@
 
         .hero-container {
             .hero-title {
-                font-size: 7.5rem;
+                font-size: 6.5rem;
             }
 
             .hero-btn {
-                font-size: 3.5rem;
+                font-size: 3rem;
                 padding: 2rem 0;
 
-                width: 460px;
+                width: 400px;
                 text-align: center;
                 text-decoration: none;
 
@@ -99,13 +99,13 @@
     .hero {
         .hero-container {
             .hero-title {
-                font-size: 5.5rem;
+                font-size: 5rem;
             }
 
             .hero-btn {
                 font-size: 2.5rem;
                 padding: 1.75rem 0;
-                width: calc(400px - 5.5rem);
+                width: 310px;
 
             }
         }
