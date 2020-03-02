@@ -4,7 +4,7 @@ import "Styles/Home/history.scss";
 
 const History = () => {
   return (
-    <section className="history">
+    <section id="about" className="history">
       <div className="history-img"></div>
       <h1 className="history-title">
         Din utveckling

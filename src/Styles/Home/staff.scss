@@ -1,0 +1,83 @@
+@import '../_global';
+
+.staff {
+    min-height: 100vh;
+    min-height: 100vh;
+    max-width: 1700px;
+    display: grid;
+    grid-template-columns: 75px max(350px) 100px 1fr 75px;
+    grid-template-rows: 75px 150px 175px 1fr 75px;
+    margin: 0 auto;
+    padding: 0 5rem;
+    // background: dark;
+
+    .staff-title {
+        grid-row: 2;
+        grid-column: 3/5;
+        font-size: 5rem;
+        margin-top: auto;
+        margin-right: auto;
+        z-index: 3;
+
+    }
+
+    .staff-img {
+        background: url("../../assets/images/guy.jpg") no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: multiply;
+        background-color: rgba(0, 0, 0, .4);
+        height: 100%;
+        // max-height: 300px; 1720
+        max-height: 250px;
+        width: 100%;
+        cursor: pointer;
+
+    }
+
+    .top-container {
+        grid-row: 2/4;
+        grid-column: 2/4;
+    }
+
+    .middle-container {
+        grid-row: 4;
+        grid-column: 2/5;
+        padding-top: 5rem;
+        grid-gap: 5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 325px));
+
+        .container {
+            .staff-img {
+                background: url("../../assets/images/lady.jpg") no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-color: rgba(0, 0, 0, .4);
+                height: 100%;
+                // max-height: 300px; 1720
+                max-height: 250px;
+                width: 100%;
+                cursor: pointer;
+
+                // TA BORT SEN.
+
+            }
+        }
+    }
+
+    .text-container {
+        margin-top: 2rem;
+
+        .name-title {
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        .work-title {
+            margin-top: .5rem;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+        }
+    }
+}

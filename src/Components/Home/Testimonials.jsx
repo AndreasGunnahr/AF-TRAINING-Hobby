@@ -5,7 +5,7 @@ import "Styles/Home/testimonials.scss";
 
 const Testimonials = () => {
   return (
-    <section className="testimonials">
+    <section id="testimonials" className="testimonials">
       <h1 className="testimonials-title">
         Vad säger
         <br />

@@ -3,10 +3,9 @@
 .hero {
     min-height: calc(100vh - 80px);
     max-width: 1700px;
-    // position: relative;
     display: grid;
     grid-template-columns: 300px 100px 1fr;
-    grid-template-rows: 50px minmax(600px, 1fr) 100px; //100 800 200
+    grid-template-rows: 50px minmax(600px, 1fr) 100px;
     padding-left: 75px;
     margin: auto auto;
 

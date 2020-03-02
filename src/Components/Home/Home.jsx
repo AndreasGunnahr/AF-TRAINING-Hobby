@@ -1,7 +1,8 @@
 import React from "react";
-
+import { Link, animateScroll as scroll } from "react-scroll";
 import Hero from "Components/Home/Hero.jsx";
 import History from "Components/Home/History.jsx";
+import Staff from "Components/Home/Staff.jsx";
 // import NewsLetter from "Components/Home/NewsLetter.jsx";
 import Services from "Components/Home/Services.jsx";
 import Testimonials from "Components/Home/Testimonials.jsx";
@@ -13,6 +14,7 @@ const Home = () => {
     <React.Fragment>
       <Hero />
       <History />
+      <Staff />
       <Services />
       {/* <NewsLetter /> */}
       <Testimonials />

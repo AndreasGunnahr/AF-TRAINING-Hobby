@@ -6,7 +6,7 @@ import "Styles/Home/hero.scss";
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section id="hero" className="hero">
       <div className="hero-container">
         <h1 className="hero-title">
           Personlig

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Hamburger from "Components/Global/Hamburger.jsx";
 import Sidebar from "Components/Global/Sidebar.jsx";
+// import { Link, animateScroll as scroll } from "react-scroll";
 import "Styles/Global/navbar.scss";
 
 const Navbar = ({ active }) => {
@@ -8,22 +9,27 @@ const Navbar = ({ active }) => {
     {
       name: "Hem",
       link: "/"
+      // to: ""
     },
     {
       name: "Om oss",
       link: "/om-oss"
+      // to: "about"
     },
     {
       name: "Tjänster",
       link: "/tjänster"
-    },
-    {
-      name: "Blogg",
-      link: "/blogg"
+      // to: "services"
     },
     {
       name: "Kontakt",
       link: "/kontakt"
+      // to: "contact"
+    },
+    {
+      name: "Blogg",
+      link: "/blogg"
+      // to: ""
     }
   ]);
   const [open, setOpen] = useState(false);
@@ -35,6 +41,18 @@ const Navbar = ({ active }) => {
       <Sidebar open={open} setOpen={setOpen} />
       <ul className="nav-links">
         {menu.map((item, index) => (
+          // <Link
+          //   // className="link"
+          //   activeClass="active"
+          //   to={item.to}
+          //   spy={true}
+          //   smooth={true}
+          //   offset={0}
+          //   duration={500}
+          // >
+          //   {item.name}
+          // </Link>
+
           <a
             key={index}
             href={item.link}

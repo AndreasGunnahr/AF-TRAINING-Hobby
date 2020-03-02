@@ -17,10 +17,10 @@ function App() {
       <Router>
         <Navbar active={history.location.pathname} />
         <Route exact path="/" component={Home} />
-        <Route exact path="/om-oss" component={About} />
+        {/* <Route exact path="/om-oss" component={About} />
         <Route exact path="/tjänster" component={Services} />
         <Route exact path="/blogg" component={Blog} />
-        <Route exact path="/kontakt" component={Contact} />
+        <Route exact path="/kontakt" component={Contact} /> */}
         {/* <Footer /> */}
       </Router>
     </div>

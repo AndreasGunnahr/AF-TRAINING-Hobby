@@ -3,7 +3,7 @@ import "Styles/Home/services.scss";
 
 const Services = () => {
   return (
-    <section className="services">
+    <section id="services" className="services">
       <div className="services-img"></div>
       <h1 className="services-title">
         Tjänster som
