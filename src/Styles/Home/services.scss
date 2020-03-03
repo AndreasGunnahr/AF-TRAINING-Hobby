@@ -2,7 +2,7 @@
 
 
 .services {
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
     max-width: 1700px;
     display: grid;
     grid-template-columns: 1fr 100px minmax(200px, 1fr);

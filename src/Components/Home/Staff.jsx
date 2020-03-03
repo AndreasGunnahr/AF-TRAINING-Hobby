@@ -4,7 +4,7 @@ import "Styles/Home/staff.scss";
 
 const Staff = () => {
   return (
-    <section className="staff">
+    <section id="staff" className="staff">
       <h1 className="staff-title">
         Våra grymma <br></br> <span className="underline">kollegor</span>
       </h1>

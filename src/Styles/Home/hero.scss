@@ -1,13 +1,17 @@
 @import '../_global';
 
 .hero {
-    min-height: calc(100vh - 80px);
+    // min-height: calc(100vh - 80px);
+    height: calc(100vh - 80px);
     max-width: 1700px;
     display: grid;
     grid-template-columns: 300px 100px 1fr;
     grid-template-rows: 50px minmax(600px, 1fr) 100px;
     padding-left: 75px;
+    // padding-top: 80px;
     margin: auto auto;
+    // margin-top: -80px;
+
 
     .hero-img {
         grid-row: 2;

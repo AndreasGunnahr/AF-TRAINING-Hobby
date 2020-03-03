@@ -2,7 +2,8 @@
 
 
 .history {
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
+    // min-height: 100vh;
     max-width: 1700px;
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 100px 1fr;

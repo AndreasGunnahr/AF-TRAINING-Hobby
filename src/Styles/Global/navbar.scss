@@ -1,62 +1,83 @@
 @import '../_global';
 
-nav {
-    max-width: 1700px;
-    position: sticky;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px 0 75px;
-    margin: 0 auto;
+
+
+.nav-wrapper {
     height: 80px;
-    z-index: 20;
+    background: black;
 
-    .logo {
-        font-size: 4rem;
-        cursor: pointer;
-    }
-
-    .nav-links {
-        list-style: none;
+    .nav {
+        // max-width: 1700px;
+        position: relative;
+        height: 80px;
+        z-index: 20;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 25px 0 25px;
+        margin: 0 auto;
 
-        a {
-            font-size: 1.8rem;
-            margin-left: 2rem;
+        &.sticky {
+            background: #333;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 1px 1px 1px #222;
+            animation: moveDown 0.5s ease-in-out;
+
+        }
+
+        .logo {
+            font-size: 4rem;
             cursor: pointer;
-            text-decoration: none;
-
-            &:first-child {
-                margin: 0;
-            }
-
         }
-    }
 
-    .active {
-        border-bottom: 2px solid $white;
-    }
-
-    .client-btn {
-        font-size: 1.4rem;
-        background: $green;
-        padding: 1rem 5rem;
-        text-transform: uppercase;
-        cursor: pointer;
-    }
-
-
-    @media screen and (min-width: 1720px) {
-        & {}
-
-    }
-
-    @media screen and (max-width: 939px) {
-        .sidebar {
+        .nav-links {
+            list-style: none;
             display: flex;
+
+            a {
+                font-size: 1.6rem;
+                margin-left: 2rem;
+                cursor: pointer;
+                text-decoration: none;
+
+                &:first-child {
+                    margin: 0;
+                }
+
+            }
         }
 
-        & {
+        .active {
+            border-bottom: 2px solid $white;
+        }
+
+        .client-btn {
+            font-size: 1.4rem;
+            background: $green;
+            padding: 1rem 5rem;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1720px) {
+    & {}
+
+}
+
+@media screen and (max-width: 1023px) {
+    .sidebar {
+        display: flex;
+    }
+
+    .nav-wrapper {
+        .nav {
             .nav-links {
                 display: none;
             }
@@ -70,8 +91,21 @@ nav {
 
 
 
+
 @media screen and (max-width: 768px) {
-    nav {
+    .nav {
         padding: 0 25px;
+    }
+}
+
+
+
+@keyframes moveDown {
+    from {
+        transform: translateY(-5rem);
+    }
+
+    to {
+        transform: translateY(0rem);
     }
 }
