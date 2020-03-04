@@ -33,7 +33,7 @@ const History = () => {
           controlsList="nodownload"
           className={play ? "history-video" : "history-video filter"}
           poster={Image}
-          preload
+          // preload
         >
           <source src={Video} type="video/mp4" />
         </video>
