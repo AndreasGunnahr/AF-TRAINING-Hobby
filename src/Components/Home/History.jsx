@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 
 import "Styles/Home/history.scss";
-// import Video from "assets/videos/video7.mp4";
-// import Image from "assets/images/bild12.jpg";
+import Video from "assets/videos/video7.mp4";
+import Image from "assets/images/bild12.jpg";
 
 const History = () => {
   const vidRef = useRef(null);
@@ -32,9 +32,9 @@ const History = () => {
           onEnded={resetVideo}
           controlsList="nodownload"
           className={play ? "history-video" : "history-video filter"}
-          // poster={Image}
+          poster={Image}
         >
-          {/* <source src={Video} type="video/mp4" /> */}
+          <source src={Video} type="video/mp4" />
         </video>
         <button
           id="play-video"
