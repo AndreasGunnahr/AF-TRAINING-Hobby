@@ -1,11 +1,49 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 
 import "Styles/Home/history.scss";
+// import Video from "assets/videos/video7.mp4";
+// import Image from "assets/images/bild12.jpg";
 
 const History = () => {
+  const vidRef = useRef(null);
+  const [play, setPlay] = useState(false);
+
+  const controlVideo = () => {
+    play ? setPlay(false) : setPlay(true);
+    play ? vidRef.current.pause() : vidRef.current.play();
+  };
+
+  const showControls = () => {
+    vidRef.current.setAttribute("controls", "controls");
+  };
+
+  const resetVideo = () => {
+    setPlay(false);
+    vidRef.current.load();
+    vidRef.current.removeAttribute("controls");
+  };
+
   return (
     <section id="about" className="history">
-      <div className="history-img"></div>
+      <div className="video-wrapper">
+        <video
+          ref={vidRef}
+          onPlay={showControls}
+          onEnded={resetVideo}
+          controlsList="nodownload"
+          className={play ? "history-video" : "history-video filter"}
+          // poster={Image}
+        >
+          {/* <source src={Video} type="video/mp4" /> */}
+        </video>
+        <button
+          id="play-video"
+          onClick={controlVideo}
+          className={play ? "video-play-button hide" : "video-play-button"}
+        >
+          <span></span>
+        </button>
+      </div>
       <h1 className="history-title">
         Din utveckling
         <br />
