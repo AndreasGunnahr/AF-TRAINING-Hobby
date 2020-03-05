@@ -6,8 +6,7 @@ const Staff = () => {
   return (
     <section id="staff" className="staff">
       <h1 className="staff-title">
-        Vi på AF Träning<br></br>&
-        <span className="underline">Rehabilitering</span>
+        Våra grymma <br></br> <span className="underline">kollegor</span>
       </h1>
       <div className="top-container">
         <div className="staff-img"></div>
