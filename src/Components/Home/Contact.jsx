@@ -43,15 +43,21 @@ const Contact = () => {
           <div className="social-outer">
             <h1 className="social-title">Följ oss på sociala medier</h1>
             <div className="social-container">
-              <a href="/" className="social-a">
+              <a href="https://twitter.com/aftraningrehab" className="social-a">
                 <FontAwesomeIcon icon={faTwitter} />
                 Twitter
               </a>
-              <a href="/" className="social-a">
+              <a
+                href="https://www.instagram.com/aftraningorehabilitering/"
+                className="social-a"
+              >
                 <FontAwesomeIcon icon={faInstagram} />
                 Instagram
               </a>
-              <a href="/" className="social-a">
+              <a
+                href="https://www.facebook.com/AFtraningorehabilitering/"
+                className="social-a"
+              >
                 <FontAwesomeIcon icon={faFacebookF} />
                 Facebook
               </a>
