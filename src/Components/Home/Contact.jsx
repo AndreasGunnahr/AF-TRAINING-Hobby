@@ -6,7 +6,7 @@ import {
   faPhoneAlt
 } from "@fortawesome/free-solid-svg-icons";
 import {
-  faTwitter,
+  faYoutube,
   faInstagram,
   faFacebookF
 } from "@fortawesome/free-brands-svg-icons";
@@ -43,9 +43,12 @@ const Contact = () => {
           <div className="social-outer">
             <h1 className="social-title">Följ oss på sociala medier</h1>
             <div className="social-container">
-              <a href="https://twitter.com/aftraningrehab" className="social-a">
-                <FontAwesomeIcon icon={faTwitter} />
-                Twitter
+              <a
+                href="https://www.youtube.com/channel/UCvMLYbxqPeIG_NPyr39hzzQ"
+                className="social-a"
+              >
+                <FontAwesomeIcon icon={faYoutube} />
+                Youtube
               </a>
               <a
                 href="https://www.instagram.com/aftraningorehabilitering/"

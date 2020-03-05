@@ -81,7 +81,7 @@ const History = () => {
             <span className="text">Årets PT nomineringar</span>
           </div>
           <div className="container">
-            <h1 className="number">400</h1>
+            <h1 className="number">255</h1>
             <span className="text">Kvadrat meter gym</span>
           </div>
         </div>
