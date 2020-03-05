@@ -5,7 +5,7 @@
     min-height: calc(100vh - 80px);
     max-width: 1700px;
     display: grid;
-    grid-template-columns: 125px max(350px) 100px 1fr 125px;
+    grid-template-columns: 125px minmax(200px, 350px) 100px minmax(500px, 1fr) 125px;
     grid-template-rows: 75px 150px 175px 1fr 75px;
     margin: 0 auto;
     padding: 0 5rem;
@@ -13,10 +13,10 @@
     .contact-title {
         grid-row: 2;
         grid-column: 3/5;
-        font-size: 4.75rem;
-        margin-top: auto;
+        font-size: 5rem;
+        margin: auto 0;
         margin-right: auto;
-        margin-left: 5rem;
+        margin-left: 3rem;
         z-index: 3;
 
     }
@@ -25,55 +25,65 @@
         grid-row: 2/5;
         grid-column: 2/4;
         background-color: rgba(50, 90, 92, .7);
-        padding: 7rem 8rem 7rem 7rem;
+        // padding: 7rem 8rem 7rem 7rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
 
-        .second-title {
+        .inner-wrapper {
+            width: 80%;
 
-            font-size: 1.8rem;
-        }
 
-        .location,
-        .phone,
-        .email {
-            display: flex;
-            align-items: center;
-            margin-top: 4rem;
-            font-size: 1.4rem;
-            font-weight: 900;
-            letter-spacing: 1px;
-
-            svg {
-                font-size: 1.6rem;
-                margin-right: 1rem;
-            }
-        }
-
-        .social-title {
-            margin-top: 4rem;
-            font-size: 1.6rem;
-        }
-
-        .social-container {
-            margin-top: 3rem;
-            display: flex;
-
-            .social-a {
+            .second-title {
+                font-size: 1.8rem;
                 font-family: $text-font;
                 text-transform: none;
-                text-decoration: none;
-                font-size: 1.2rem;
-                margin-right: 2rem;
-                font-weight: 900;
                 letter-spacing: 1px;
+                width: 90%;
+            }
+
+            .location,
+            .phone,
+            .email {
                 display: flex;
                 align-items: center;
+                margin-top: 4rem;
+                font-size: 1.6rem;
+                font-weight: 600;
+                letter-spacing: 1px;
 
                 svg {
-                    font-size: 1.6rem;
+                    font-size: 1.8rem;
                     margin-right: 1rem;
+                }
+            }
+
+            .social-title {
+                margin-top: 4rem;
+                font-size: 1.65rem;
+                letter-spacing: 1px;
+            }
+
+            .social-container {
+                margin-top: 3rem;
+                display: flex;
+
+                .social-a {
+                    font-family: $text-font;
+                    text-transform: none;
+                    text-decoration: none;
+                    font-size: 1.4rem;
+                    margin-right: 2rem;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        font-size: 1.8rem;
+                        margin-right: 1rem;
+                    }
                 }
             }
         }
@@ -112,7 +122,7 @@
 
         label {
             font-family: $header-font;
-            font-size: 2rem;
+            font-size: 1.8rem;
             margin-bottom: .5rem;
             letter-spacing: 1px;
 
@@ -125,8 +135,8 @@
         input,
         textarea {
             width: 100%;
-            height: 40px;
-            font-size: 1.4rem;
+            height: 50px;
+            font-size: 1.6rem;
             background: none;
             border: none;
             border-bottom: 3px solid $green;
@@ -134,7 +144,7 @@
 
             &::placeholder {
                 color: #565656;
-                margin: auto 0;
+                padding-top: .5rem;
 
             }
 
@@ -150,7 +160,7 @@
 
     .send-btn {
         float: right;
-        font-size: 2rem;
+        font-size: 1.8rem;
         padding: 1.5rem 6rem;
         background: $green;
         letter-spacing: 1px;
@@ -158,5 +168,551 @@
         text-align: center;
         text-decoration: none;
 
+    }
+}
+
+@media screen and (min-width: 1720px) {
+    .contact {
+        .contact-title {
+            font-size: 5.5rem;
+
+        }
+
+        .green-container {
+
+            .inner-wrapper {
+                .second-title {
+                    font-size: 2rem;
+                }
+
+                .info-container {
+
+                    .location,
+                    .phone,
+                    .email {
+                        font-size: 1.6rem;
+                        margin-top: 5rem;
+
+                        svg {
+                            font-size: 1.8rem;
+
+                        }
+                    }
+                }
+
+                .social-outer {
+                    .social-title {
+                        font-size: 2rem;
+                        margin-top: 5rem;
+                    }
+
+                    .social-container {
+                        .social-a {
+                            margin-right: 2rem;
+                            font-size: 1.6rem;
+
+
+                            svg {
+                                font-size: 1.8rem;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-form {
+        .wrapper {
+
+            label {
+                font-size: 2.2rem;
+
+
+            }
+
+            input,
+            textarea {
+                font-size: 1.8rem;
+                height: 60px;
+            }
+
+        }
+
+        .send-btn {
+            font-size: 2rem;
+            padding: 2rem 120px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1439px) {
+    .contact {
+        grid-template-columns: 25px minmax(325px, 400px) 100px minmax(500px, 1fr) 25px;
+        grid-template-rows: 75px 150px 175px 1fr 75px;
+        padding: 0 5rem;
+
+        .contact-title {
+            grid-row: 2;
+            grid-column: 3/5;
+            font-size: 5rem;
+            margin: auto 0;
+            margin-right: auto;
+            margin-left: 3rem;
+            // margin-left: 3rem;
+
+
+        }
+
+        .green-container {
+            grid-row: 2/5;
+            grid-column: 2/4;
+
+            .inner-wrapper {
+                width: 80%;
+
+                .second-title {
+                    font-size: 1.75rem;
+
+                }
+
+                .location,
+                .phone,
+                .email {
+                    margin-top: 4rem;
+                    font-size: 1.4rem;
+
+
+                    svg {
+                        font-size: 1.6rem;
+
+                    }
+                }
+
+                .social-title {
+                    font-size: 1.75rem;
+
+                }
+
+                .social-container {
+                    margin-top: 3rem;
+                    display: flex;
+
+                    .social-a {
+
+                        font-size: 1.3rem;
+
+
+                        svg {
+                            font-size: 1.6rem;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-form {
+        grid-row: 3/5;
+        grid-column: 4;
+        padding: 5rem 5rem 0 5rem;
+
+        .middle-container {
+            margin: 5rem 0 5rem 0;
+        }
+
+
+        .wrapper {
+            label {
+                font-size: 1.8rem;
+
+
+            }
+
+            input,
+            textarea {
+
+                font-size: 1.6rem;
+
+
+            }
+
+        }
+
+        .send-btn {
+            font-size: 1.8rem;
+            padding: 1.5rem 6rem;
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    .contact {
+        grid-template-columns: minmax(250px, 350px) 100px minmax(400px, 1fr);
+        padding: 0;
+
+        .contact-title {
+            grid-row: 2;
+            grid-column: 2/4;
+            font-size: 4rem;
+        }
+
+        .green-container {
+            grid-row: 2/5;
+            grid-column: 1/3;
+            align-items: flex-start;
+            padding-left: 3rem;
+
+            .inner-wrapper {
+                width: 85%;
+
+                .second-title {
+                    font-size: 1.6rem;
+
+                }
+
+                .location,
+                .phone,
+                .email {
+                    margin-top: 4rem;
+                    font-size: 1.4rem;
+
+
+                    svg {
+                        font-size: 1.6rem;
+
+                    }
+                }
+
+                .social-title {
+                    font-size: 1.4rem;
+
+                }
+
+                .social-container {
+                    margin-top: 3rem;
+                    display: flex;
+
+                    .social-a {
+
+                        font-size: 1.4rem;
+
+
+                        svg {
+                            font-size: 1.4rem;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-form {
+        grid-row: 3/5;
+        grid-column: 3;
+        padding: 3rem 5rem 0 5rem;
+
+        .middle-container {
+            margin: 3rem 0 0 0;
+        }
+
+        .top-container {
+            flex-direction: column;
+        }
+
+
+        .wrapper {
+            &:nth-child(2) {
+                margin-top: 3rem;
+            }
+
+            label {
+                font-size: 1.4rem;
+
+
+            }
+
+            input,
+            textarea {
+                font-size: 1.4rem;
+            }
+
+        }
+
+        .send-btn {
+            font-size: 1.4rem;
+            padding: 1.5rem 6rem;
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .contact {
+        grid-template-columns: 50px 1fr 50px;
+        grid-template-rows: 50px 125px 440px 1fr;
+        padding: 0;
+
+        .contact-title {
+            grid-row: 2;
+            grid-column: 2;
+            font-size: 3.5rem;
+            margin-left: 0;
+        }
+
+        .green-container {
+            grid-row: 4;
+            grid-column: 1/4;
+            align-items: center;
+            flex-direction: row;
+
+            padding: 0 5rem 2rem 5rem;
+
+            .inner-wrapper {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                justify-content: space-between;
+
+                .info-container {
+                    .second-title {
+                        display: none;
+                        font-size: 1.6rem;
+
+                    }
+
+                    .location,
+                    .phone,
+                    .email {
+                        margin-top: 2rem;
+                        font-size: 1.4rem;
+
+
+                        svg {
+                            font-size: 1.6rem;
+
+                        }
+                    }
+                }
+
+                .social-outer {
+                    .social-title {
+                        font-size: 1.4rem;
+                        margin-top: 2rem;
+
+                    }
+
+                    .social-container {
+                        margin-top: 2rem;
+                        display: flex;
+
+                        .social-a {
+
+                            font-size: 1.4rem;
+
+
+                            svg {
+                                font-size: 1.4rem;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-form {
+        grid-row: 3;
+        grid-column: 2;
+        padding: 0;
+
+        .middle-container {
+            margin: 3rem 0 0 0;
+        }
+
+        .top-container {
+            margin-top: 3rem;
+        }
+
+
+        .wrapper {
+
+            label {
+                font-size: 1.4rem;
+            }
+
+            input,
+            textarea {
+                font-size: 1.4rem;
+            }
+
+        }
+
+        .send-btn {
+            font-size: 1.4rem;
+            padding: 1.5rem 6rem;
+
+        }
+    }
+
+
+    @media screen and (max-width: 425px) {
+        .contact {
+            grid-template-columns: 30px 1fr 30px;
+            grid-template-rows: 50px 85px 440px 1fr;
+
+            .contact-title {
+                font-size: 2.75rem;
+
+            }
+
+            .green-container {
+                padding: 0 3rem 3rem 3rem;
+
+                .inner-wrapper {
+                    .info-container {
+                        .second-title {
+                            font-size: 1.6rem;
+                        }
+
+                        .location,
+                        .phone,
+                        .email {
+                            font-size: 1.2rem;
+
+                            svg {
+                                font-size: 1.4rem;
+
+                            }
+                        }
+
+                        .location {
+                            margin-top: 3rem;
+                        }
+                    }
+
+                    .social-outer {
+                        .social-title {
+                            font-size: 1.4rem;
+                        }
+
+                        .social-container {
+                            .social-a {
+
+                                font-size: 1.2rem;
+
+
+                                svg {
+                                    font-size: 1.4rem;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact-form {
+            .wrapper {
+
+                label {
+                    font-size: 1.4rem;
+
+
+                }
+
+                input,
+                textarea {
+                    font-size: 1.4rem;
+                }
+
+            }
+
+            .send-btn {
+                font-size: 1.4rem;
+                padding: 1.25rem 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .contact {
+        .contact-title {
+            font-size: 2.5rem;
+
+        }
+
+        .green-container {
+
+            .inner-wrapper {
+                .info-container {
+
+                    .location,
+                    .phone,
+                    .email {
+                        font-size: 1.2rem;
+
+                        svg {
+                            font-size: 1.4rem;
+
+                        }
+                    }
+                }
+
+                .social-outer {
+                    .social-title {
+                        font-size: 1.4rem;
+                    }
+
+                    .social-container {
+                        .social-a {
+                            margin-right: 1.5rem;
+                            font-size: 1.2rem;
+
+
+                            svg {
+                                font-size: 1.4rem;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-form {
+        .wrapper {
+
+            label {
+                font-size: 1.4rem;
+
+
+            }
+
+            input,
+            textarea {
+                font-size: 1.2rem;
+            }
+
+        }
+
+        .send-btn {
+            font-size: 1.4rem;
+            padding: 1.5rem 0;
+        }
     }
 }
