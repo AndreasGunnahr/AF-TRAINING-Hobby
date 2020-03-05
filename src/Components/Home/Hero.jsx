@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import "Styles/Home/hero.scss";
 
@@ -13,13 +14,32 @@ const Hero = () => {
           <br /> träning
           <br /> för alla
         </h1>
-        <a href="/" className="hero-btn">
+        <Link
+          className="hero-btn"
+          to={"contact"}
+          spy={true}
+          smooth={true}
+          offset={-80}
+          duration={1200}
+        >
           Boka nu
-        </a>
+        </Link>
+        {/* <a href="/" className="hero-btn">
+          Boka nu
+        </a> */}
       </div>
       <div className="hero-img"></div>
       <div className="next">
-        <span className="next-title">Start din resa</span>
+        <Link
+          className="next-title"
+          to={"history"}
+          spy={true}
+          smooth={true}
+          offset={-40}
+          duration={500}
+        >
+          Start din resa
+        </Link>
         <FontAwesomeIcon
           className="fontAwesome"
           icon={faChevronDown}
