@@ -25,7 +25,6 @@
         grid-row: 2/5;
         grid-column: 2/4;
         background-color: rgba(50, 90, 92, .7);
-        // padding: 7rem 8rem 7rem 7rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -130,6 +129,12 @@
 
         textarea {
             padding-top: 1rem;
+
+            &::placeholder {
+                color: #565656;
+                padding-top: .5rem;
+
+            }
         }
 
         input,
@@ -144,8 +149,6 @@
 
             &::placeholder {
                 color: #565656;
-                padding-top: .5rem;
-
             }
 
             &:focus {
