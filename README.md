@@ -1,3 +1,3 @@
 # AF-project
 
-Website for a friend personal training company - React, SASS and NodeJS
+Website for a friends personal training company - React, SASS and NodeJS
