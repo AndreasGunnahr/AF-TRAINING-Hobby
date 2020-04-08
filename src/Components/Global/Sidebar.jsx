@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import "Styles/Global/sidebar.scss";
-
 const Container = styled.div`
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};

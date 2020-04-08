@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 
-import "Styles/Home/history.scss";
 import Video from "assets/videos/video7.mp4";
 import Image from "assets/images/bild12.jpg";
 

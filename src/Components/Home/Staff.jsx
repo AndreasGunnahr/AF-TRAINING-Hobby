@@ -1,7 +1,5 @@
 import React from "react";
 
-import "Styles/Home/staff.scss";
-
 const Staff = () => {
   return (
     <section id="staff" className="staff">

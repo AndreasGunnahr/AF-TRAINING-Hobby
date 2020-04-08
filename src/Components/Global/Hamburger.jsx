@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import "Styles/Global/hamburger.scss";
-
 const Burger = styled.div`
   div {
     background: ${({ open }) => (open ? "#000000" : "#FAFAFA")};

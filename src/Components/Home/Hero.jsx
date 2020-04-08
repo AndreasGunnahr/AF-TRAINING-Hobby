@@ -3,8 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import "Styles/Home/hero.scss";
-
 const Hero = () => {
   return (
     <section id="hero" className="hero">

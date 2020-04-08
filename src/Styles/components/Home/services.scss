@@ -1,6 +1,3 @@
-@import '../_global';
-
-
 .services {
     min-height: calc(100vh - 80px);
     max-width: 1700px;
@@ -12,7 +9,7 @@
     .services-img {
         grid-row: 2/4;
         grid-column: 2/4;
-        background: url("../../assets/images/bild15.jpg") no-repeat;
+        background: url("../../../assets/images/bild15.jpg") no-repeat;
         background-position: center;
         background-size: cover;
         background-blend-mode: multiply;

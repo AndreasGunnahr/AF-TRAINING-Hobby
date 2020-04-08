@@ -1,7 +1,6 @@
 import React from "react";
 
 import Slider from "./Slider";
-import "Styles/Home/testimonials.scss";
 
 const Testimonials = () => {
   return (

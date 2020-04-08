@@ -1,5 +1,3 @@
-@import '../_global';
-
 .staff {
     min-height: calc(100vh - 80px);
     max-width: 1700px;
@@ -21,7 +19,7 @@
     }
 
     .staff-img {
-        background: url("../../assets/images/guy.jpg") no-repeat;
+        background: url("../../../assets/images/guy.jpg") no-repeat;
         background-position: center;
         background-size: cover;
         background-blend-mode: multiply;
@@ -49,7 +47,7 @@
 
         .container {
             .staff-img {
-                background: url("../../assets/images/lady.jpg") no-repeat;
+                background: url("../../../assets/images/lady.jpg") no-repeat;
                 background-position: center;
                 background-size: cover;
                 background-color: rgba(0, 0, 0, .4);

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import "Styles/Home/slider.scss";
 import image from "assets/images/lady.jpg";
 import image2 from "assets/images/guy.jpg";
 import image3 from "assets/images/guy2.jpg";

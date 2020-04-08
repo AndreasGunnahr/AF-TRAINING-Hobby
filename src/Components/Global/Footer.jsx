@@ -5,9 +5,9 @@ import {
   faFacebookF,
   faInstagram
 } from "@fortawesome/free-brands-svg-icons";
-import "Styles/Global/footer.scss";
 
 function Footer() {
+  
   return (
     <div className="footer">
       <h1 className="footer-logo">LOGO</h1>

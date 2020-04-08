@@ -12,7 +12,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import ContactForm from "Components/Global/ContactForm.jsx";
-import "Styles/Home/contact.scss";
 
 const Contact = () => {
   return (

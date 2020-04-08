@@ -1,7 +1,5 @@
 import React from "react";
 
-import "Styles/Home/newsLetter.scss";
-
 const NewsLetter = () => {
   return (
     <form className="news-letter">

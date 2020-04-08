@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import Hamburger from "Components/Global/Hamburger.jsx";
 import Sidebar from "Components/Global/Sidebar.jsx";
 import { Link, animateScroll as scroll } from "react-scroll";
-import "Styles/Global/navbar.scss";
 
 const Navbar = ({ sticky, stickyRef }) => {
   const [menu, setMenu] = useState([

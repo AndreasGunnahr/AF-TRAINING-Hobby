@@ -8,8 +8,6 @@ import Services from "Components/Home/Services.jsx";
 import Testimonials from "Components/Home/Testimonials.jsx";
 import Navbar from "Components/Global/Navbar.jsx";
 
-import "Styles/Home/home.scss";
-
 const Home = () => {
   useEffect(() => {
     return () => {

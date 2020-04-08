@@ -2,10 +2,12 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Home from "Components/Home/Home.jsx";
-import About from "Components/About/About.jsx";
-import Services from "Components/Services/Services.jsx";
-import Blog from "Components/Blog/Blog.jsx";
-import Contact from "Components/Contact/Contact.jsx";
+// import About from "Components/About/About.jsx";
+// import Services from "Components/Services/Services.jsx";
+// import Blog from "Components/Blog/Blog.jsx";
+// import Contact from "Components/Contact/Contact.jsx";
+
+import './Styles/index.scss';
 
 function App() {
   return (
